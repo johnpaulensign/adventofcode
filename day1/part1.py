@@ -2,7 +2,6 @@ import input
 
 total_value = 0
 for word in input.words:
-    print(f"word {word}")
     first_number = -1
     second_number = -1
     msgs = [word]
