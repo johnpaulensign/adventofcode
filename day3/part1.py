@@ -1,14 +1,11 @@
 import re
-import sys
-import puzzle_input
 
-with open("./puzzle_input.txt", "r") as file:
+with open("./input.txt", "r") as file:
     lines = file.readlines()
     for i in range(0, len(lines)):
         lines[i] = lines[i].strip()
 
 total_part_numbers = 0
-part_number_counts = {}
 for i in range(0, len(lines)):
     parts = re.findall(r"[0-9]+", lines[i])
     for part in parts:
